@@ -1,0 +1,4 @@
+tmpl
+====
+
+scaffold generator
