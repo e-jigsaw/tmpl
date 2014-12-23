@@ -8,6 +8,7 @@
   "author": "jigsaw (http://jgs.me)",
   "license": "MIT",
   "dependencies": {
+    "commander": "^2.5.1",
     "handlebars": "^2.0.0",
     "inquirer": "^0.8.0",
     "mkdirp": "^0.5.0"
