@@ -14,6 +14,7 @@ exports.questions = [
 
 exports.actions = (answers)->
   @mkdir 'src'
+  @mkdir 'test'
   @template 'README.md',
     name: answers.name
     description: answers.description
@@ -24,3 +25,4 @@ exports.actions = (answers)->
   @copy '_gitignore', '.gitignore'
   @copy 'gulpfile.coffee'
   @copy 'src/index.coffee'
+  @copy 'test/index.coffee'
