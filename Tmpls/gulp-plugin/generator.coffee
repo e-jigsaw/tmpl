@@ -23,6 +23,7 @@ exports.actions = (answers)->
     name: answers.name
     description: answers.description
   @copy '_gitignore', '.gitignore'
+  @copy '_npmignore', '.npmignore'
   @copy 'gulpfile.coffee'
   @copy 'src/index.coffee'
   @copy 'test/index.coffee'
