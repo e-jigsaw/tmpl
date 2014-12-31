@@ -24,11 +24,12 @@ class Generator
     mkdir.sync path.resolve(@cwdPath, dest)
     log 'mkdir', dest
 
-  template: (file, data)->
+  template: (file, data, dest)->
+    if dest is undefined then dest = file
     source = fs.readFileSync path.resolve(@tmplPath, 'tmpl', "#{file}.hbs")
     tmpl = HBS.compile source.toString()
-    fs.writeFileSync path.resolve(@cwdPath, file), tmpl(data)
-    log 'create', file
+    fs.writeFileSync path.resolve(@cwdPath, dest), tmpl(data)
+    log 'create', dest
 
   copy: (src, dest)->
     if dest is undefined then dest = src
