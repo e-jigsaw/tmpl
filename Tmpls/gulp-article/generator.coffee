@@ -23,5 +23,5 @@ exports.actions = (answers)->
 
   @template 'article.md',
     title: title
-    url: url
+    url: "/#{year}-#{month}-#{day}-#{url}.html"
   , "posts/#{year}-#{month}-#{day}-#{url}.md"
