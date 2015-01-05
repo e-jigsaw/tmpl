@@ -18,8 +18,8 @@ exports.actions = (answers)->
   year = today.getFullYear()
   month = today.getMonth() + 1
   day = today.getDate()
-  if month.length is 1 then month = "0#{month}"
-  if day.length is 1 then day = "0#{day}"
+  if month.toString().length is 1 then month = "0#{month}"
+  if day.toString().length is 1 then day = "0#{day}"
 
   @template 'article.md',
     title: title
