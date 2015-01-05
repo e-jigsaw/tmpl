@@ -56,7 +56,7 @@ create: src/index.styl
 
 `generator.coffee`:
 
-```
+```coffee
 exports.questions = [
   {
     type: 'input'
