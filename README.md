@@ -95,10 +95,11 @@ exports.actions = (answers)->
 * `mkdir(dest)`
   * Create directory
   * `dist`(`String`) is directory name
-* `template(filename, data)`
+* `template(filename, data, dest)`
   * [handlebars](https://github.com/wycats/handlebars.js/) template generate
   * `filename`(`String`) is a filename. It reference to `tmpl/filename.hbs`.
   * `data`(`Object`) is a template contents.
+  * `dest`(`String`, Optional) is a filename.
 * `copy(dist, dest)`
   * Copy file
   * `dist`(`String`) is a filename. It reference to `tmpl/dist`.
