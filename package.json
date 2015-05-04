@@ -1,6 +1,6 @@
 {
-  "name": "tmpl",
-  "version": "0.0.18",
+  "name": "@jigsaw/tmpl",
+  "version": "0.1.0",
   "description": "scaffold generator",
   "bin": {
     "tmpl": "./bin/tmpl"
