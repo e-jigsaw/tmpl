@@ -1,9 +1,4 @@
-#!/usr/bin/env coffee
+#!/usr/bin/env node
 
-program = require 'commander'
-
-program
-  .version require('../package.json').version
-  .parse process.argv
-
-require('../cli').run()
+require('LiveScript');
+require('../src/cli.ls')();
